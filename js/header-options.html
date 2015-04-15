@@ -1,0 +1,31 @@
+<header>
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="" />
+    <h4>Colegio Hispano Americano</h4>
+  </a>
+  <nav role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa">&#xf0c9;</span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul>
+        <li ng-class="{ active:isSet(1) }"><a href="index.html" ng-click="setTab(1)">Home</a></li>
+        <li ng-class="{ active:isSet(2) }"><a href="about.html" ng-click="setTab(2)">Quienes Somos</a></li>
+        <li ng-class="{ active:isSet(3) }"><a href="gallery.html" ng-click="setTab(3)">Galeria</a></li>
+        <li ng-class="{ active:isSet(4) }"><a href="blog.html" ng-click="setTab(4)">Blog</a></li>
+        <li ng-class="{ active:isSet(5) }"><a href="contact.html" ng-click="setTab(5)">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- /.navbar-collapse -->
+    <div id="sun"></div>
+
+  </nav>
+  <div class="clearfix"></div>
+</header>
