@@ -1,18 +1,10 @@
 (function(){
   var app = angular.module('kinder', []);
 
-/*  app.controller("MenuController", function() {
-    this.menu = 1;
-
-    this.isSet = function(checkMenu) {
-      return this.menu === checkMenu;
-    };
-
-    this.setTab = function(setMenu) {
-      this.menu = setMenu;
-    };
+  app.controller("BulletController", function() {
+    this.bullets = image_bullets;
   });
-*/
+
 
   app.directive("headerOptions", function(){
     return {
@@ -67,6 +59,30 @@
         "name": "Contacto",
         "url":"contact.html"
     }
+  ];
+
+  var image_bullets = [
+  	{
+  		"src" : "images/wowslider/01.png",
+  		"alt" : "This is the title",
+  		"title" : "This is the title",
+  		"id" : "wows1_0",
+  		"description" : "And this is description"
+  	},
+  	{
+  		"src" : "images/wowslider/02.png",
+  		"alt" : "Another title",
+  		"title" : "Another title",
+  		"id" : "wows1_1",
+  		"description" : "And another description"
+  	},
+  	{
+  		"src" : "images/wowslider/03.png",
+  		"alt" : "Third title",
+  		"title" : "With third description",
+  		"id" : "wows1_2",
+  		"description" : "And another description"
+  	}
   ];
 
 })();

@@ -30,15 +30,15 @@
 			<section id="content" class="col-lg-7 col-md-8 col-sm-12">
 
 				<div class="cloud">
-					<h1>Contact</h1>
+					<h1>ContactO</h1>
 				</div>
 
 				<div class="content-bg">
 					<div class="col-lg-6 col-sm-12">
-						<span class="fa"></span> <span id="address">Eiffel Tower, Avenue Anatole France, Paris, France</span><br /><!-- input your address on this line -->
-						<span class="fa"></span> +99 (254) 30681<br />
+						<span class="fa"></span> <span id="address">Calle Carmen 960, Santiago</span><br />
+						<span class="fa"></span> (2) 2768 0900<br />
 						<span class="fa"></span> email@demodomain.com<br />
-						<span class="fa"></span> demodomain.com
+						<span class="fa"></span> http://www.hispano-americano.cl/
 					</div>
 					<div class="col-lg-6 col-sm-12">
 						<div class="fa social-media">
@@ -62,16 +62,16 @@
 					<div id="note"></div>
 					<form class="w-clearfix" id="ajax-contact-form" action="http://ithemewordpress.com/">
 						<div class="col-12">
-							<textarea name="message" id="message" placeholder="Your Message"></textarea>
+							<textarea name="message" id="message" placeholder="Mensaje"></textarea>
 						</div>
 						<div class="col-6">
-							<input type="text" name="name" placeholder="Your Name" />
+							<input type="text" name="name" placeholder="Nombre" />
 						</div>
 						<div class="col-6">
-							<input type="text" name="email" placeholder="Your Email" />
+							<input type="text" name="email" placeholder="Email" />
 						</div>
 						<div class="col-12">
-							<input class="button red" type="submit" value=" SEND MESSAGE" />
+							<input class="button red" type="submit" value=" ENVIAR MENSAJE" />
 						</div>
 					</form>
 					<div class="clearfix"></div>
@@ -100,8 +100,9 @@
 					if (status == 'OK') {
 						map = new GMaps({
 							div: '#map',
-							lat: -12.043333,
-							lng: -77.028333
+							zoom: 16,
+							lat: -13.043333,
+							lng: -74.028333
 						});
 						var latlng = results[0].geometry.location;
 						map.setCenter(latlng.lat(), latlng.lng());
