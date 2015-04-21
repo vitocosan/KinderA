@@ -19,7 +19,7 @@
 		<script src="js/modernizr.js"></script>
 		<script src="js/respond.js"></script>
 	</head>
-	<body>
+	<body ng-controller="horarioController">
 		<div class="container" id="wrapper">
 
 			<!-- header -->
@@ -30,13 +30,58 @@
 			<section id="content" class="col-lg-7 col-md-8 col-sm-12">
 
 				<div class="cloud">
-					<h1>Quienes Somos</h1>
+					<h1>Informacion del Curso</h1>
 				</div>
 
 				<div class="content-bg">
-					<h2 class="green-title"><span class="fa"></span> Datos del Kinder-A</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					<div class="gallery">
+
+					<h2 class="green-title"><span class="fa"></span> Informacion relevante del Curso</h2>
+					<ul>
+						<li><b>Horario Jornada</b>: Lunes a Viernes desde 7:55am a 13:35pm</li>
+						<li><b>Asistencia Minima</b>: 85% - <span>La inasistencia debe ser justificada (certificado médico y/o comunicación en libreta)</span> </li>
+						<li><b>Atrasos Permitidos</b>: 3</li>
+						<li><b>Inasistencias Permitidas</b>: 6</li>
+						<li><b>Nro Alumnos</b>: 39</li>
+						<li><b>Niños</b>: 18</li>
+						<li><b>Niñas</b>: 21</li>
+						<li><b>Alumnos Nuevos</b>: 8</li>
+					</ul>
+					<hr>
+					<ul>
+						<li><b>Educadoras</b>: <a href="mailto:nayaret@escolapios.cl?subject=Consulta Apoderado">Email</a></li>
+						<li><b>Casino</b>: Pamela Toro - <a href="mailto:pame12_27@hotmail.com?subject=Consulta Apoderado">Email</a> - 27680828</li>
+
+					</ul>
+					<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="gallery.html" class="button red"><span>&#xf138;</span>VER DETALLE DEL PROGRAMA</a>-->
+
+					<div class="separator"></div>
+
+					<a id="horario"></a>
+					<h2 class="green-title"><span class="fa"></span> Horario Curso</h2>
+					<p>La Jornada es de Lunes a Viernes desde 7:55am a 13:35pm</p>
+					<table st-table="rowCollection" class="table table-striped">
+						<thead>
+						<tr>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miercoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr ng-repeat="row in rowCollection">
+							<td>{{row.lunes}}</td>
+							<td>{{row.martes}}</td>
+							<td>{{row.miercoles}}</td>
+							<td>{{row.jueves}}</td>
+							<td>{{row.viernes}}</td>
+						</tr>
+						</tbody>
+					</table>
+
+					<!--<div class="gallery">
 						<img src="images/placeholders/green.png" alt="" />
 						<img src="images/placeholders/yellow.png" alt="" />
 						<img src="images/placeholders/orange.png" alt="" />
@@ -44,13 +89,8 @@
 						<div class="clearfix"></div>
 					</div>
 					<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					<a href="gallery.html" class="button red"><span>&#xf138;</span>VER GALERIA DE FOTOS</a>
+					<a href="gallery.html" class="button red"><span>&#xf138;</span>VER GALERIA DE FOTOS</a>-->
 
-					<div class="separator"></div>
-
-					<h2 class="green-title"><span class="fa"></span> Programa Academico y Actividades</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					<a href="gallery.html" class="button red"><span>&#xf138;</span>VER DETALLE DEL PROGRAMA</a>
 				</div>
 
 			</section>
@@ -66,6 +106,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="js/jquery.prettyPhoto.js"></script>
+		<script src="js/smart-table.min.js"></script>
 
 	</body>
 </html>
