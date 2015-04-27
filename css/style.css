@@ -208,6 +208,12 @@ textarea	{
 	margin: 20px 0 25px 0;
 }
 
+.text_justify{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 120%;
+}
+
 /*	PrettyPhoto
 -------------------------------------------------------------- */
 
