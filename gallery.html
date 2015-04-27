@@ -33,32 +33,18 @@
 					<h1>Galleria</h1>
 				</div>
 
-				<div class="content-bg">
-					<h2 class="green-title"><span class="fa"></span> Primer album de fotos</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="content-bg" ng-controller="galleryController">
+					<h2 class="green-title"><span class="fa"></span> {{galleryTitle}}</h2>
+					<p>{{galleryDesc}}</p>
 					<div class="gallery">
-						<a href="images/placeholders/green-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/green.png" alt="" /></a>
-						<a href="images/placeholders/yellow-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/yellow.png" alt="" /></a>
-						<a href="images/placeholders/orange-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/orange.png" alt="" /></a>
-						<a href="images/placeholders/blue-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/blue.png" alt="" /></a>
-						<a href="images/placeholders/blue-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/blue.png" alt="" /></a>
-						<a href="images/placeholders/orange-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/orange.png" alt="" /></a>
-						<a href="images/placeholders/yellow-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/yellow.png" alt="" /></a>
-						<a href="images/placeholders/green-big.png" rel="prettyphoto[gallery1]"><img src="images/placeholders/green.png" alt="" /></a>
+						<div ng-repeat="images in galleryOne">
+							<a href="{{images.img}}" rel="prettyphoto[gallery1]"><img src="{{images.img_small}}" alt="" /></a>
+						</div>
 						<div class="clearfix"></div>
 					</div>
 
 					<div class="separator"></div>
 
-					<h2 class="green-title"><span class="fa"></span> Segundo album de fotos</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					<div class="gallery">
-						<a href="images/placeholders/green-big.png" rel="prettyphoto[gallery2]"><img src="images/placeholders/green.png" alt="" /></a>
-						<a href="images/placeholders/yellow-big.png" rel="prettyphoto[gallery2]"><img src="images/placeholders/yellow.png" alt="" /></a>
-						<a href="images/placeholders/orange-big.png" rel="prettyphoto[gallery2]"><img src="images/placeholders/orange.png" alt="" /></a>
-						<a href="images/placeholders/blue-big.png" rel="prettyphoto[gallery2]"><img src="images/placeholders/blue.png" alt="" /></a>
-						<div class="clearfix"></div>
-					</div>
 				</div>
 
 			</section>

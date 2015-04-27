@@ -15,6 +15,28 @@
       ];
   }]);
 
+  app.controller('galleryController',['$scope', function($scope){
+    $scope.galleryTitle = "Presentacion de obra de Teatro";
+    $scope.galleryDesc = "Galería de imagenes con fotos de los niños tomadas durante la Presentación de obra de Teatro. Lamentablemente no se pudo sacar una grupal, pero se tomaron varias.";
+    $scope.galleryOne = [
+      {img:'images/kinderA01/1.jpg', img_small:'images/kinderA01/1_small.jpg'},
+      {img:'images/kinderA01/2.jpg', img_small:'images/kinderA01/2_small.jpg'},
+      {img:'images/kinderA01/3.jpg', img_small:'images/kinderA01/3_small.jpg'},
+      {img:'images/kinderA01/4.jpg', img_small:'images/kinderA01/4_small.jpg'},
+      {img:'images/kinderA01/5.jpg', img_small:'images/kinderA01/5_small.jpg'},
+      {img:'images/kinderA01/6.jpg', img_small:'images/kinderA01/6_small.jpg'},
+      {img:'images/kinderA01/7.jpg', img_small:'images/kinderA01/7_small.jpg'},
+      {img:'images/kinderA01/8.jpg', img_small:'images/kinderA01/8_small.jpg'},
+      {img:'images/kinderA01/9.jpg', img_small:'images/kinderA01/9_small.jpg'},
+      {img:'images/kinderA01/10.jpg', img_small:'images/kinderA01/10_small.jpg'},
+      {img:'images/kinderA01/11.jpg', img_small:'images/kinderA01/11_small.jpg'},
+      {img:'images/kinderA01/12.jpg', img_small:'images/kinderA01/12_small.jpg'},
+      {img:'images/kinderA01/13.jpg', img_small:'images/kinderA01/13_small.jpg'},
+      {img:'images/kinderA01/14.jpg', img_small:'images/kinderA01/14_small.jpg'},
+      {img:'images/kinderA01/15.jpg', img_small:'images/kinderA01/15_small.jpg'}
+    ];
+  }]);
+
   app.directive("headerOptions", function(){
     return {
       restrict: 'E',
