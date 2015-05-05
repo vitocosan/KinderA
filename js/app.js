@@ -62,10 +62,6 @@
     return{
       restrict: 'E',
       templateUrl: "directive/section-footer.html",
-      controllerAs: 'MenuOptions',
-      controller: function(){
-        this.menu_items = menu_options;
-      }
     };
   });
 

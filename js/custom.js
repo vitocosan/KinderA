@@ -75,7 +75,7 @@ $(document).ready(function() {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Form
 	/* ---------------------------------------------------------------------- */
-    $("#ajax-contact-form").submit(function() {
+    /*$("#ajax-contact-form").submit(function() {
         var str = $(this).serialize();
         $.ajax({
             type: "post",
@@ -94,7 +94,7 @@ $(document).ready(function() {
             }
         });
         return false;
-    });
+    });*/
 
 	/* ---------------------------------------------------------------------- */
 	/*	PrettyPhoto

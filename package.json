@@ -1,0 +1,26 @@
+{
+  "name": "kindera",
+  "version": "1.0.0",
+  "description": "sitio web oficial del kinder a hispano americano",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitocosan/vitocosan.github.io.git"
+  },
+  "author": "vitocosan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitocosan/vitocosan.github.io/issues"
+  },
+  "homepage": "https://github.com/vitocosan/vitocosan.github.io#readme",
+  "devDependencies": {
+    "grunt-execute": "^0.2.2",
+    "grunt-shell": "^0.7.0",
+    "grunt-contrib-compress": "^0.10.0",
+    "grunt": "^0.4.5",
+    "grunt-ssh": "^0.11.2"
+  }
+}
